@@ -13,7 +13,14 @@ function criaCartao(categoria, pergunta, resposta){
                         </p>
                     </div>
                 </div>
-    `
+`
+let respotaEstaVisivel = false
+function viraCartao(){
+     respostaEstaVisual = !respostaEstaVisivel
+     cartao.classList.toggle('active',respostaEstaVisivel)
+
+
+}
     let container = document.getElementById('container')
     container.appendChild(cartao)
 }
